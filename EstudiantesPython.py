@@ -47,3 +47,19 @@ def main():
             "promedio": promedio,
             "estado": estado
         })
+        
+    # Mostrar resultados
+    print("\n--- Resultados ---")
+    for estudiante in estudiantes:
+        print(f"\nEstudiante: {estudiante['nombre']}")
+        print(f"Calificaciones: {estudiante['calificaciones']}")
+        print(f"Promedio: {estudiante['promedio']:.2f}")
+        print(f"Estado: {estudiante['estado']}")
+    
+    print("\nResumen final:")
+    print(f"Total de estudiantes: {num_estudiantes}")
+    print(f"Aprobados: {aprobados}")
+    print(f"Reprobados: {reprobados}")
+
+if __name__ == "__main__":
+    main()
